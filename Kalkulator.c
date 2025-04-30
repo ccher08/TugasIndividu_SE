@@ -13,7 +13,7 @@ int main(){
 	printf("----------------------\n");
 	printf("KALKULATOR MATEMATIKA\n");
 	printf("----------------------\n\n");
-	printf("Mode apa yang ingin kamu gunakan?\n[1] Operasi dasar (+, -, x, :, v)\n[2] Quiz matematika\n\nPilihanmu (gunakan angka):  ");
+	printf("Mode apa yang ingin kamu gunakan?\n[1] Operasi dasar (+, -, x, :)\n[2] Quiz matematika\n\nPilihanmu (gunakan angka):  ");
 	scanf("%c", &P1);
 	
 	system ("cls");
@@ -23,7 +23,7 @@ int main(){
 		printf("Masukkan angka kedua : \n");
 		scanf("%f", &num2);
 		
-		printf("\nOperasi apa yang ingin kamu gunakan?\n[1] Penjumlahan (+)\n[2] Pengurangan (-)\n[3] Perkalian (*)\n[4] Pembagian (/)\n[5] Perakaran (v)\nPilihanmu (gunakan angka):  ");
+		printf("\nOperasi apa yang ingin kamu gunakan?\n[1] Penjumlahan (+)\n[2] Pengurangan (-)\n[3] Perkalian (*)\n[4] Pembagian (/)\nPilihanmu (gunakan angka):  ");
 		scanf("%d", &P2);
 		getchar();
 		
@@ -43,10 +43,6 @@ int main(){
 			case 4 :
 				hasil = num1 / num2;
 				printf("Hasil dari %.2f / %.2f adalah %.2f\n", num1, num2, hasil);
-				break;
-			case 5 :
-				hasil = sqrt(num1);
-				printf("Hasil akar dari %.2f adalah %.2f\n", num1, hasil);
 				break;
 			default :
         		printf("\nMenu tidak tersedia");
